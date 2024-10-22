@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Front end/Css/login.css" />
+  </head>
+  <body>
+      <video autoplay loop muted plays-inline class="back_video">
+          <source src="/videos/1st video.mp4" type="video/mp4">
+      </video>
+    <header>
+        <h2 class="logo">Tempest</h2>
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <button class="btnlogin-popup">Login</button>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form id="login-form" action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input id="login-email" type="text" required />
+            <label for="">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input id="login-password" type="password" required />
+            <label for="">Password</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+            <input id="login-mobile" type="password" required />
+            <label for="">Mobile Number</label>
+          </div>
+          <div class="rememebr-forgot">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">Forogt Password</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?<a href="#" class="register-link"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form id="register-form" action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <input id="register-username" type="text" required />
+            <label for="">Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input id="register-email" type="text" required />
+            <label for="">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input id="register-password" type="password" required />
+            <label for="">Password</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+            <input id="register-mobile" type="text" required />
+            <label for="">Mobile Number</label>
+          </div>
+          <div class="rememebr-forgot">
+            <label
+              ><input type="checkbox" />I agree to the terms and
+              conditions</label
+            >
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account?<a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <style>
+      .wrapper {
+        position: relative;
+        width: 400px;
+        height: 440px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transform: scale(0);
+        transition: transform 0.5s ease, height 0.2s ease;
+      }
+    </style>
+    <script src="/Front end/js/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- <p>https://youtu.be/p1GmFCGuVjw?si=E1VDvJrn37bYb7Z7</p> -->
+  </body>
+</html>
