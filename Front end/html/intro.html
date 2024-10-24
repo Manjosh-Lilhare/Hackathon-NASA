@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Intro</title>
+    <style>
+      /* Full-screen video styling */
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+      }
+
+      video {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Video Intro -->
+    <video id="introVideo" autoplay muted>
+      <source src="videos\video 3.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <script>
+      const video = document.getElementById('introVideo');
+
+      // Redirect to the main page after the video ends
+      video.onended = function () {
+        window.location.href = "index.html"; // Adjust path if needed
+      };
+    </script>
+  </body>
+</html>

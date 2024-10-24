@@ -81,7 +81,7 @@ header{
 }
 .navigation .btnlogin-popup:hover{
     background: #fff;
-    color: black;
+    color: rgb(9, 5, 5);
 }
 
 .wrapper.active-popup{
@@ -121,7 +121,7 @@ header{
     height: 45px;
     background: #fff;
     font-size: 2em;
-    color: #000000;
+    color: #050404;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +183,7 @@ header{
     /* justify-content:space-evenly; */
 }
 .rememebr-forgot label{
-    color: #000000;
+    color: #0c0909;
 }
 .rememebr-forgot label input{
     accent-color:#fff;
@@ -206,7 +206,7 @@ header{
     border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
-    color: #162938;
+    color: #090c0e;
     font-weight: 500;
 }
 .login-register{
